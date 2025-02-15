@@ -1,0 +1,59 @@
+/* Background with Animated Gradient */
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460, #533483);
+  background-size: 300% 300%;
+  animation: backgroundAnimation 10s ease infinite;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Text Bounce Animation */
+@keyframes bounce {
+  0% { transform: translateY(-100px); opacity: 0; }
+  50% { transform: translateY(20px); opacity: 0.7; }
+  70% { transform: translateY(-10px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.welcome-text {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.bounce {
+  animation: bounce 1.5s ease-out forwards;
+}
+
+.highlight {
+  color: #ffcc00;
+  text-shadow: 0px 0px 20px rgba(255, 204, 0, 0.9);
+}
+
+/* Click-to-Continue Text */
+.click-text {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.7;
+  animation: fadeIn 2s infinite alternate;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
