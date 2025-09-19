@@ -30,8 +30,8 @@ SmartSync/
 
 - **Node.js**
 - **React**
-- **Express (if backend involved)**
-- **MongoDB / Firebase (optional)**
+- **Express (for backend)**
+- **Firebase**
 - **Git & GitHub for version control**
 
 ## 📦 Installation
